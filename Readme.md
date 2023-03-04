@@ -25,4 +25,12 @@ Los intervalos de tiempo simulados son de $t=10000 \\, s$ con un paso de $\\Delt
 
 Más detalles acerca de los parámetros numéricos se encuentran en los archivos [fvSchemes](/B1900t10000/system/fvSchemes) y [fvSolution](/B1900t10000/system/fvSolution).
 
+## Propiedades físicas del sistema
 
+El fluido del recinto es agua y presenta las siguientes propiedades:
+
+- Peso molecular: $M = 18 \\, g/mol$
+- Densidad: $\\rho = 1 \\, kg/m^{3}$
+- Viscosidad cinemática: $5 \times 10^{-3} \\: m^{2}/s$
+- Número de Prandtl: $Pr = 5$
+- Coeficiente de expansión térmica: $\\beta = 1 \times 10^{-3} \\: 1/K$
