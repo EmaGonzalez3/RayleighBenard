@@ -8,3 +8,7 @@ La profundidad unitaria de las celdas da cuenta de la bidimensionalidad del prob
 La malla se generó con la utilidad `blockMesh`. La siguiente figura muestra la malla con sus respectivas dimensiones de recinto y de celda:
 
 ![Detalle de la malla](/B1900t10000/Detalle_mallado.png)
+
+Tanto las paredes superior e inferior como izquierda y derecha del recinto se consideran sólidos (`wall`) mientras que a las caras frontal y posterior se les atribuye la condición `empty` que denota la irrelevancia de la dirección en la solución numérica.
+
+La temperatura en la pared inferior es $T_H=300\\,K$ y la de la pared superior $T_C=301\\,K$. Ambas son uniformes y permanecen constantes.
