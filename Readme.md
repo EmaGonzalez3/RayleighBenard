@@ -38,4 +38,9 @@ El fluido del recinto es agua y presenta las siguientes propiedades:
 
 Para determinar el valor del número de Rayleigh ($Ra$) correspondiente a cada simulación, se trabaja sobre el valor de la gravedad. Esto se debe a que, si bien la situación no es necesariamente realista, se trata de una constante universal directamente proporcional al número adimensional por lo que se considera una opción de  suma conveniencia.  
 Por ejemplo, si se calcula el valor del número de Rayleigh para la gravedad terrestre, se tiene:
+
 $Ra= \\frac{g \\, \\cdot \\, \\beta}{\\nu \\, \cdot \\, a} \cdot (T_H - T_C) \cdot h^{3} = \\frac{9.8 \\, m/s^{2} \\, \\cdot \\, 1 \times 10^{-3} \\: 1/K}{5 \times 10^{-3} \\: m^{2}/s \\, \cdot \\, 5 \\, m^{2}/s} \cdot (301 \\, K - 301 \\, K) \cdot (1 \\, m)^{3} = 1960$
+
+## Determinación del umbral de convección natural
+
+Para hallar el valor crítico de $Ra$, se realizó una serie de simulaciones para distintos valores del mismo y se procuró determinar la velocidad máxima en la dirección vertical para el último instante ($t=10000$) a modo de obtener una curva a la obtenida por [Wesfreid et al. [1978]](https://www.researchgate.net/profile/Jose-Wesfreid/publication/43326017_Critical_effects_in_Rayleigh-Benard_convection/links/00463518264c70c91a000000/Critical-effects-in-Rayleigh-Benard-convection.pdf).
