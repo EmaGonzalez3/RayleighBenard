@@ -15,7 +15,7 @@ La temperatura en la pared inferior es $T_H=300\\,K$ y la de la pared superior $
 El campo de velocidades es uniforme y vale $U(x, y, z) = (1e-4, 0, 0)\\, m/s$. Para las paredes se impone la condición de no deslizamiento.  
 El campo de presiones es uniforme y nulo.
 
-Si bien, explícitamente no hay condiciones de simetría, [los resultados de las simulaciones](#Anexo:-Tabla-de-resultados) muestran que los vórtices son, efectivamente, estructuras simétricas. 
+Si bien, explícitamente no hay condiciones de simetría, [los resultados de las simulaciones](#anexo-tabla-de-resultados) muestran que los vórtices son, efectivamente, estructuras simétricas ya que los valores máximos y mínimos en la dirección horizontal y en la vertical son siempre del mismo orden y coincidentes en, al menos, 2 dígitos.
 
 ## Parámetros numéricos
 
