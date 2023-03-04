@@ -51,4 +51,4 @@ Se [ajustan](/rayleigh_benard2.ipynb) los puntos obtenidos de acuerdo a la ley p
 
 Se aprecia sin relleno el punto correspondiente al valor crítico, que corresponde a $Ra_c=1731,66$.
 
-
+Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico corresponde a $Ra_c=1708$ lo que implica un error relativo de un $1,39%$
