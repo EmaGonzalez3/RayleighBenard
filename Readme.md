@@ -15,7 +15,7 @@ La temperatura en la pared inferior es $T_H=300\\,K$ y la de la pared superior $
 El campo de velocidades es uniforme y vale $U(x, y, z) = (1e-4, 0, 0)\\, m/s$. Para las paredes se impone la condición de no deslizamiento.  
 El campo de presiones es uniforme y nulo.
 
-Si bien, explícitamente no hay condiciones de simetría, [los resultados de las simulaciones](#anexo-tabla-de-resultados) muestran que los vórtices son, efectivamente, estructuras simétricas ya que los valores máximos y mínimos en la dirección horizontal y en la vertical son siempre del mismo orden y coincidentes en, al menos, 2 dígitos.
+Si bien, explícitamente no hay condiciones de simetría, [los resultados de las simulaciones](#anexo-i-tabla-de-resultados) muestran que los vórtices son, efectivamente, estructuras simétricas ya que los valores máximos y mínimos en la dirección horizontal y en la vertical son siempre del mismo orden y coincidentes en, al menos, 2 dígitos.
 
 ## Parámetros numéricos
 
@@ -55,7 +55,7 @@ Se aprecia sin relleno el punto correspondiente al valor crítico, que correspon
 
 Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico corresponde a $Ra_c=1708$ lo que implica un error relativo de un $1,39 \\, \\%$ para el resultado obtenido en la simulación numérica y permite concluir que la misma valida satisfactoriamente la evidencia experimental.
 
-## Anexo: Tabla de resultados
+## Anexo I: Tabla de resultados
 
 | Ra   | Ux           | Uy           | Uz          | U           | Uxmax       | Uxmin        | Uymax       | Uymin        |
 |:----:|:------------:|:------------:|:-----------:|:-----------:|:-----------:|:------------:|:-----------:|:------------:|
@@ -72,3 +72,18 @@ Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico 
 | 1960 | -1,72519E-06 | 0,00444693   | 5,28658E-22 | 0,00444693  | 0,00431306  | -0,000025703 | 0,00444693  | -0,00444635  |
 | 2100 | -4,94175E-05 | -0,00564152  | 0           | 0,005641736 | 0,00543965  | -0,00543943  | 0,00563025  | -0,00564152  |
 
+## Anexo II: Videos
+
+Las siguientes simulaciones corresponden a valores de $Ra=1960$, intervalos de tiempo $t=10000 \\, s$ y, para una mejor apreciación del fenómeno, se realizan escrituras cada $10 \\, s$.
+
+### Temperatura
+[![VideoT](/B1900t10000/Ra1960t10000_Uy_preview.png)](https://drive.google.com/file/d/1wK7DCpHmZBhm0HHUPW8WgpBd5w-wMazR/view?usp=sharing)
+
+### Velocidad (valor absoluto)
+[![VideoU](/B1900t10000/Ra1960t10000_U_preview.png)](https://drive.google.com/file/d/1wU70bRDix9Pj-kZfNyIOt5o7c9976dlI/view?usp=sharing)
+
+### Velocidad horizontal
+[![VideoUx](/B1900t10000/Ra1960t10000_Ux_preview.png)](https://drive.google.com/file/d/1wJ7gdjOLyfOpzFSEocXVVJOKu2eH8J-I/view?usp=sharing)
+
+### Velocidad vertical
+[![VideoUy](/B1900t10000/Ra1960t10000_Uy_preview.png)](https://drive.google.com/file/d/1wRRTLcBRNPjp-T7v4KlpV5BwzWFegG1H/view?usp=sharing)
