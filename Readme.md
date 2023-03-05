@@ -77,7 +77,7 @@ Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico 
 Las siguientes simulaciones corresponden a valores de $Ra=1960$, intervalos de tiempo $t=10000 \\, s$ y, para una mejor apreciación del fenómeno, se realizan escrituras cada $10 \\, s$.
 
 ### Temperatura
-[![VideoT](/B1900t10000/Ra1960t10000_Uy_preview.png)](https://drive.google.com/file/d/1wK7DCpHmZBhm0HHUPW8WgpBd5w-wMazR/view?usp=sharing)
+[![VideoT](/B1900t10000/Ra1960t10000_T_preview.png)](https://drive.google.com/file/d/1wK7DCpHmZBhm0HHUPW8WgpBd5w-wMazR/view?usp=sharing)
 
 ### Velocidad (valor absoluto)
 [![VideoU](/B1900t10000/Ra1960t10000_U_preview.png)](https://drive.google.com/file/d/1wU70bRDix9Pj-kZfNyIOt5o7c9976dlI/view?usp=sharing)
