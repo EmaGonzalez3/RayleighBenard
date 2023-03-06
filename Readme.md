@@ -43,6 +43,19 @@ Por ejemplo, si se calcula el valor del número de Rayleigh para la gravedad ter
 
 $Ra= \\frac{g \\, \\cdot \\, \\beta}{\\nu \\, \cdot \\, a} \cdot (T_H - T_C) \cdot h^{3} = \\frac{9.8 \\, m/s^{2} \\, \\cdot \\, 1 \times 10^{-3} \\: 1/K}{5 \times 10^{-3} \\: m^{2}/s \\, \cdot \\, 5 \\, m^{2}/s} \cdot (301 \\, K - 301 \\, K) \cdot (1 \\, m)^{3} = 1960$
 
+### Tiempos característicos
+
+Otra interpretación del número de Rayleigh es la comparación entre los tiempos difusivo, viscoso y de flotación según la relación $Ra = \\frac{\\tau_d}{\\tau_f} \\cdot \\frac{\\tau_v}{\\tau_f}$.  
+Calculando cada uno de los tiempos característicos considerando las propiedades determinadas y la gravedad terrestre, es decir, $Ra = 1960$, se obtienen los siguientes resultados:
+
+$\\tau_v = \\frac{h^2}{\\nu} = \\frac{1 \\, m}{5 \times 10^{-3} \\: m^{2}/s} = 200 \\, s$
+
+$\\tau_d = \\frac{h^2}{\\a} = \\frac{1 \\, m}{5 \\, m^{2}/s} = 1000 \\, s$
+
+$\\tau_f = (\\frac{g \\, \\cdot \\, \\beta \\cdot \\DeltaT}{h})^ -1/2 = (9.8 \\, m/s^{2} \\, \\cdot \\, 1 \times 10^{-3} \\: 1/K \\cdot 1 \\, K}{1 \\, m})^ -1/2 \\simeq 10,10$
+
+Además de comprobar que se verifica el valor del parámetro adimensional ($Ra = \\frac{\\tau_d}{\\tau_f} \\cdot \\frac{\\tau_v}{\\tau_f} = \\frac{\\1000}{\\9.76} \\cdot \\frac{\\200}{\\10,10} = 1960$), se puede apreciar que el tiempo de simulación adoptado $t=10000 \\, s$ es 10 veces mayor al valor del tiempo carácteristico más alto ($\\tau_d$). De esta manera, se asume que el intervalo simulado es lo suficientemente amplio para que se manifiesten los 3 fenómenos que intervienen en el análisis.
+
 ## Determinación del umbral de convección natural
 
 Para hallar el valor crítico de $Ra$, se realizó una serie de simulaciones para distintos valores del mismo y se procuró determinar la velocidad máxima en la dirección vertical para el último instante ($t=10000$) a modo de obtener una curva a la obtenida por [Wesfreid et al. [1978]](https://www.researchgate.net/profile/Jose-Wesfreid/publication/43326017_Critical_effects_in_Rayleigh-Benard_convection/links/00463518264c70c91a000000/Critical-effects-in-Rayleigh-Benard-convection.pdf).
