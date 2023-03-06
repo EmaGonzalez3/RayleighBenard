@@ -70,7 +70,7 @@ Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico 
 
 ## Anexo I: Tabla de resultados
 
-[Tabla de resultados](/tabla.md)
+[Tabla de resultados](/tabla_resultados.md)
 
 ## Anexo II: Videos
 
