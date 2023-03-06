@@ -60,7 +60,7 @@ Además de comprobar que se verifica el valor del parámetro adimensional ($Ra =
 
 Para hallar el valor crítico de $Ra$, se realizó una serie de simulaciones para distintos valores del mismo y se procuró determinar la velocidad máxima en la dirección vertical para el último instante ($t=10000$) a modo de obtener una curva a la obtenida por [Wesfreid et al. [1978]](https://www.researchgate.net/profile/Jose-Wesfreid/publication/43326017_Critical_effects_in_Rayleigh-Benard_convection/links/00463518264c70c91a000000/Critical-effects-in-Rayleigh-Benard-convection.pdf).
 
-Se [ajustan](/rayleigh_benard2.ipynb) los puntos obtenidos de acuerdo a la ley potencial $V = V_0 \\cdot \\varepsilon ^{1/2}$ donde $\\varepsilon = \\frac{Ra-Ra_c}{Ra_c}$ (Bergé et al. [1975]) y se obtienen los siguientes gráficos:
+Se [ajustan](/rayleigh_benard3.ipynb) los puntos obtenidos de acuerdo a la ley potencial $V = V_0 \\cdot \\varepsilon ^{1/2}$ donde $\\varepsilon = \\frac{Ra-Ra_c}{Ra_c}$ (Bergé et al. [1975]) y se obtienen los siguientes gráficos:
 
 ![Ajustes_rb](/rb_plot2.png)
 
