@@ -87,3 +87,7 @@ Las siguientes simulaciones corresponden a valores de $Ra=1960$, intervalos de t
 
 ### Velocidad vertical
 [![VideoUy](/B1900t10000/Ra1960t10000_Uy_preview.png)](https://drive.google.com/file/d/1wRRTLcBRNPjp-T7v4KlpV5BwzWFegG1H/view?usp=sharing)
+
+### Vorticidad
+[![VideoOmega](/B1900t10000/Ra1960t10000_omega_preview.png)](https://drive.google.com/file/d/1xLCPACeWyeALOYaZgiZjuH0hiTd936Wh/view?usp=sharing)
+
