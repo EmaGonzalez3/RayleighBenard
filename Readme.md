@@ -79,7 +79,7 @@ A modo de contraejemplo, modificando las propiedades de modo tal que $\\tau_d = 
 
 ![Curva t1000](/Ra2575/rb_plot_t1000.png)
 
-Como el tiempo de simulación apenas coincide con el tiempo característico viscoso y difusivo, los resultados implican que el valor crítico $Ra_c$ tiende a ser mayor del esperado. Esto puede explicarse justamente por la falta de tiempo para la correcta manifestación de los procesos implicados
+Como el tiempo de simulación apenas coincide con el tiempo característico viscoso y difusivo, los resultados implican que el valor crítico $Ra_c$ tiende a ser mayor del esperado (cerca de 2000). Esto puede explicarse justamente por la falta de tiempo para la correcta manifestación de los procesos implicados
 
 ## Determinación del umbral de convección natural
 
