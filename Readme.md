@@ -84,6 +84,8 @@ Se aprecia sin relleno el punto correspondiente al valor crítico, que correspon
 
 Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico corresponde a $Ra_c=1708$ lo que implica un error relativo de un $2,23 \\, \\%$ para el resultado obtenido en la simulación numérica y permite concluir que la misma valida satisfactoriamente la evidencia experimental.
 
+Cabe aclarar que se consideraron para el ajuste los puntos correspondientes a los valores entre $Ra = 1662$ y $Ra = 1750$ de la [tabla de resultados](#anexo-i-tabla-de-resultados), esto se debe a que la validez del ajuste tiene un rango limitado alrededor del umbral de convección natural.
+
 ## Anexo I: Tabla de resultados
 
 [Tabla de resultados](/tabla_resultados.md)
