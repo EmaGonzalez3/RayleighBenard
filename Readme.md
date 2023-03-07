@@ -23,6 +23,8 @@ Al comparar las [velocidades máximas obtenidas](/tabla_malla.csv) luego de simu
 
 Para valores menores del parámetro adimensional en cuestión, la malla media proporciona resultados muy cercanos a los de la más fina mientras que la gruesa no es tan precisa. A medida que el $Ra$ aumenta la malla media comienza a diferir en mayor medida de la fina para, cerca de $Ra = 1900$ comportarse de forma muy similar a la gruesa. No obstante, debido a que el tiempo de simulación de la malla media es apenas el doble que el de la gruesa y aproximadamente 5 veces menor que el de la fina, resulta conveniente adoptarla para las simulaciones a efectuar. De esta manera, se concluye que la malla de 1800 celdas es la opción óptima.
 
+Como análisis adicional, se puede inferir que para mallas más finas, la velocidad comienza a aumentar a valores de $Ra$ más altos. Se podría presuponer que el valor crítico determinado sea mayor a medida que la cantidad de celdas aumenta pero dadas las compliaciones ya mencionadas acerca de las simulaciones con este tipo de mallas, este análisis no será efectuado.
+
 ### Condiciones de borde
 
 Tanto las paredes superior e inferior como izquierda y derecha del recinto se consideran sólidos (`wall`) mientras que a las caras frontal y posterior se les atribuye la condición `empty` que denota la irrelevancia de la dirección en la solución numérica.
@@ -86,6 +88,8 @@ Se aprecia sin relleno el punto correspondiente al valor crítico, que correspon
 Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico corresponde a $Ra_c=1708$ lo que implica un error relativo de un $2,23 \\, \\%$ para el resultado obtenido en la simulación numérica y permite concluir que la misma valida satisfactoriamente la evidencia experimental.
 
 Cabe aclarar que se consideraron para el ajuste los puntos correspondientes a los valores entre $Ra = 1662$ y $Ra = 1750$ de la [tabla de resultados](#anexo-i-tabla-de-resultados), esto se debe a que la validez del ajuste tiene un rango limitado alrededor del umbral de convección natural.
+
+Sobre lo expresado en los [comentarios](#influencia-del-tamaño-de-malla) acerca de la influencia del tamaño de malla, se ve que el valor crítico efectivamente tiene un error en defecto. Si bien escapa al análisis pertinente, sería coherente suponer que al trabajar con mallas más finas el resultado se acerque más al valor experimental.
 
 ## Anexo I: Tabla de resultados
 
