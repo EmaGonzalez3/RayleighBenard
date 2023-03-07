@@ -17,9 +17,9 @@ Si bien un mallado más fino permite tener simulaciones más precisas, también 
 - Una malla media de 1800 celdas (90x20x1)
 - Una malla fina de 4500 celdas (90x50x1)
 
-Al comparar las [velocidades máximas obtenidas](/tabla_malla.csv) luego de simular el mismo intervalo ($t = 10000 \\, s$) para distintos valores del número de Rayleigh se observa lo siguiente:
+Al [comparar](/analisis_mallado.ipynb "Cuaderno de cálculo de análisis del tamaño de malla") las [velocidades máximas obtenidas](/tabla_malla.csv) luego de simular el mismo intervalo ($t = 10000 \\, s$) para distintos valores del número de Rayleigh se observa lo siguiente:
 
-[![Comparación tamaños de malla](/mallado_plot.png)](/analisis_mallado.ipynb "Cuaderno de cálculo de análisis del tamaño de malla")
+![Comparación tamaños de malla](/mallado_plot.png)
 
 Para valores menores del parámetro adimensional en cuestión, la malla media proporciona resultados muy cercanos a los de la más fina mientras que la gruesa no es tan precisa. A medida que el $Ra$ aumenta la malla media comienza a diferir en mayor medida de la fina para, cerca de $Ra = 1900$ comportarse de forma muy similar a la gruesa. No obstante, debido a que el tiempo de simulación de la malla media es apenas el doble que el de la gruesa y aproximadamente 5 veces menor que el de la fina, resulta conveniente adoptarla para las simulaciones a efectuar. De esta manera, se concluye que la malla de 1800 celdas es la opción óptima.
 
