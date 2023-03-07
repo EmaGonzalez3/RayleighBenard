@@ -120,7 +120,7 @@ Wesfreid, J., Pomeau, Y., Dubois, M., Normand, C., & Bergé, P. (1978). Critical
 
 Bergé, P. (1975). Rayleigh-Benard instability: experimental findings obtained by light scattering and other optical methods. Fluctuations, Instabilities, and Phase Transitions, 323-352.
 
-Greenshields, C. y Weller, H. (2022). Notes on Computational Fluid Dynamics: General Principles. Reading, UK: CFD Direct Ltd
+Greenshields, C. y Weller, H. (2022). Notes on Computational Fluid Dynamics: General Principles. Reading, UK: CFD Direct Ltd.
 
 D'Adamo, J. (2022). Transferencia de Calor y Masa. Universidad de Buenos Aires.
 
