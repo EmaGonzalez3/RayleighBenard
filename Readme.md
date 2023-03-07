@@ -78,7 +78,7 @@ Para hallar el valor crítico de $Ra$, se realizó una serie de simulaciones par
 
 Se [ajustan](/rayleigh_benard4.ipynb) los puntos obtenidos de acuerdo a la ley potencial $V = V_0 \\cdot \\varepsilon ^{1/2}$ donde $\\varepsilon = \\frac{Ra-Ra_c}{Ra_c}$ (Bergé et al. [1975]) y se obtienen los siguientes gráficos:
 
-![Ajustes_rb](/rb_plot2.png)
+![Ajustes_rb](/rb_plot3.png)
 
 Se aprecia sin relleno el punto correspondiente al valor crítico, que corresponde a $Ra_c=1669,83$.
 
