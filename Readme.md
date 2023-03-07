@@ -1,6 +1,19 @@
 # Simulación numérica del problema de Rayleigh-Bénard 
 
-## Detalle del mallado y de las condiciones de borde
+# Índice
+1. [Detalle del mallado y de las condiciones de borde](#1-detalle-del-mallado-y-de-las-condiciones-de-borde)  
+    1.1. [Influencia del tamaño de malla](#11-influencia-del-tamaño-de-malla)  
+    1.2. [Condiciones de borde](#12-condiciones-de-borde)
+2. [Parámetros numéricos](#2-parámetros-numéricos)
+3. [Propiedades físicas del sistema](#3-propiedades-físicas-del-sistema)  
+    3.1. [Tiempos característicos](#31-tiempos-característicos)  
+4. [Determinación del umbral de convección natural](#4-determinación-del-umbral-de-convección-natural)
+5. [Anexo](#5-anexo)  
+    5.1. [Anexo I: Tabla de resultados](#51-anexo-i-tabla-de-resultados)  
+    5.1. [Anexo II: Videos](#52-anexo-ii-videos)
+6. [Bibliografía](#6-bibliografía)
+
+## 1. Detalle del mallado y de las condiciones de borde
 
 El recinto de la simulación consiste en un volumen de 9x1x2 m y la malla en 90x20x1 celdas. Esto se traduce en celdas de 10x5x1 cm que priorizan la obtención de información en la dirección vertical debido a que es en este eje en donde se esperan más cambios.  
 La profundidad unitaria de las celdas da cuenta de la bidimensionalidad del problema.
@@ -9,7 +22,7 @@ La malla se generó con la utilidad `blockMesh`. La siguiente figura muestra la 
 
 ![Detalle de la malla](/B1900t10000/Detalle_mallado.png)
 
-### Influencia del tamaño de malla
+### 1.1. Influencia del tamaño de malla
 
 Si bien un mallado más fino permite tener simulaciones más precisas, también aumenta el costo computacional y, por ende, el tiempo requerido para efectuar los cálculos así como el tamaño de los archivos. A modo de optimizar la malla, se hicieron 3 pruebas con distintos tamaños:
 
@@ -25,7 +38,7 @@ Para valores menores del parámetro adimensional en cuestión, la malla media pr
 
 Como análisis adicional, se puede inferir que para mallas más finas, la velocidad comienza a aumentar a valores de $Ra$ más altos. Se podría presuponer que el valor crítico determinado sea mayor a medida que la cantidad de celdas aumenta pero dadas las compliaciones ya mencionadas acerca de las simulaciones con este tipo de mallas, este análisis no será efectuado.
 
-### Condiciones de borde
+### 1.2. Condiciones de borde
 
 Tanto las paredes superior e inferior como izquierda y derecha del recinto se consideran sólidos (`wall`) mientras que a las caras frontal y posterior se les atribuye la condición `empty` que denota la irrelevancia de la dirección en la solución numérica.
 
@@ -35,7 +48,7 @@ El campo de presiones es uniforme y nulo.
 
 Si bien, explícitamente no hay condiciones de simetría, [los resultados de las simulaciones](#anexo-i-tabla-de-resultados) muestran que los vórtices son, efectivamente, estructuras simétricas ya que los valores máximos y mínimos en la dirección horizontal y en la vertical son siempre del mismo orden y coincidentes en, al menos, 2 dígitos.
 
-## Parámetros numéricos
+## 2. Parámetros numéricos
 
 Las simulaciones se efectuaron por medio del software [OpenFOAM (version 8)](https://www.openfoam.com/) y la visualización se llevó a cabo en [Paraview (5.6.2)](https://www.paraview.org/). Ambos se pueden obtener desde los sitios oficiales o a través de [blueCFD](https://bluecfd.github.io/Core/Downloads/).  
 El solver empleado es `buoyantPimpleFoam` y es el más recomendado para simulaciones en régimen transitorio en casos de transferencia de calor por permitir considerar la aproximación de Boussinesq y simplificar, de esta manera, el término de las fuerzas volumétricas (flotación) en la ecuación de conservación de la cantidad de movimiento.
@@ -46,7 +59,7 @@ Los intervalos de tiempo simulados son de $t=10000 \\, s$ con un paso de $\\Delt
 
 Más detalles acerca de los parámetros numéricos se encuentran en los archivos [fvSchemes](/B1900t10000/system/fvSchemes) y [fvSolution](/B1900t10000/system/fvSolution).
 
-## Propiedades físicas del sistema
+## 3. Propiedades físicas del sistema
 
 El fluido del recinto es agua y presenta las siguientes propiedades:
 
@@ -62,7 +75,7 @@ Por ejemplo, si se calcula el valor del número de Rayleigh para la gravedad ter
 
 $Ra= \\frac{g \\, \\cdot \\, \\beta}{\\nu \\, \cdot \\, a} \cdot (T_H - T_C) \cdot h^{3} = \\frac{9.8 \\, m/s^{2} \\, \\cdot \\, 1 \times 10^{-3} \\: 1/K}{5 \times 10^{-3} \\: m^{2}/s \\, \cdot \\, 5 \\, m^{2}/s} \cdot (301 \\, K - 301 \\, K) \cdot (1 \\, m)^{3} = 1960$
 
-### Tiempos característicos
+### 3.1. Tiempos característicos
 
 Otra interpretación del número de Rayleigh es la comparación entre los tiempos difusivo, viscoso y de flotación según la relación $Ra = \\frac{\\tau_d}{\\tau_f} \\cdot \\frac{\\tau_v}{\\tau_f}$  
 Calculando cada uno de los tiempos característicos considerando las propiedades determinadas y la gravedad terrestre, es decir, $Ra = 1960$, se obtienen los siguientes resultados:
@@ -81,7 +94,7 @@ A modo de contraejemplo, modificando las propiedades de modo tal que $\\tau_d = 
 
 Como el tiempo de simulación apenas coincide con el tiempo característico viscoso y difusivo, los resultados implican que el valor crítico $Ra_c$ tiende a ser mayor del esperado (cerca de 2000). Esto puede explicarse justamente por la falta de tiempo para la correcta manifestación de los procesos implicados
 
-## Determinación del umbral de convección natural
+## 4. Determinación del umbral de convección natural
 
 Para hallar el valor crítico de $Ra$, se realizó una serie de simulaciones para distintos valores del mismo y se procuró determinar la velocidad máxima en la dirección vertical para el último instante ($t=10000$) a modo de obtener una curva a la obtenida por [Wesfreid et al. [1978]](https://www.researchgate.net/profile/Jose-Wesfreid/publication/43326017_Critical_effects_in_Rayleigh-Benard_convection/links/00463518264c70c91a000000/Critical-effects-in-Rayleigh-Benard-convection.pdf).
 
@@ -97,11 +110,13 @@ Cabe aclarar que se consideraron para el ajuste los puntos correspondientes a lo
 
 Sobre lo expresado en los [comentarios](#influencia-del-tamaño-de-malla) acerca de la influencia del tamaño de malla, se ve que el valor crítico efectivamente tiene un error en defecto. Si bien escapa al análisis pertinente, sería coherente suponer que al trabajar con mallas más finas el resultado se acerque más al valor experimental.
 
-## Anexo I: Tabla de resultados
+## 5. Anexo
+
+## 5.1. Anexo I: Tabla de resultados
 
 [Tabla de resultados](/tabla_resultados.md)
 
-## Anexo II: Videos
+## 5.2. Anexo II: Videos
 
 Las siguientes simulaciones corresponden a valores de $Ra=1960$, intervalos de tiempo $t=10000 \\, s$ y, para una mejor apreciación del fenómeno, se realizan escrituras cada $10 \\, s$.
 
@@ -120,7 +135,7 @@ Las siguientes simulaciones corresponden a valores de $Ra=1960$, intervalos de t
 ### Vorticidad
 [![VideoOmega](/B1900t10000/Ra1960t10000_omega_preview.png)](https://drive.google.com/file/d/1xLCPACeWyeALOYaZgiZjuH0hiTd936Wh/view?usp=sharing)
 
-## Bibliografía
+## 6. Bibliografía
 
 Wesfreid, J., Pomeau, Y., Dubois, M., Normand, C., & Bergé, P. (1978). Critical effects in Rayleigh-Bénard convection. Journal de Physique, 39(7), 725-731.
 
