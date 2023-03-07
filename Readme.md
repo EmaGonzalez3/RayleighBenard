@@ -75,6 +75,12 @@ $\\tau_f = (\\frac{g \\, \\cdot \\, \\beta \\, \\cdot \\, \\Delta T}{h})^{-1/2} 
 
 Además de comprobar que se verifica el valor del parámetro adimensional ($Ra = \\frac{\\tau_d}{\\tau_f} \\cdot \\frac{\\tau_v}{\\tau_f} = \\frac{1000}{10,10} \\cdot \\frac{200}{10,10} = 1960$), se puede apreciar que el tiempo de simulación adoptado $t=10000 \\, s$ es 10 veces mayor al valor del tiempo carácteristico más alto ($\\tau_d$). De esta manera, se asume que el intervalo simulado es lo suficientemente amplio para que se manifiesten los 3 fenómenos que intervienen en el análisis.
 
+A modo de contraejemplo, modificando las propiedades de modo tal que $\\tau_d = \\tau_v = 1000 \\, s$ se obtiene [datos](/Ra2575/rb_t1000.csv) que permiten confeccionar la siguiente [curva](/Ra2575/rb_t1000.ipynb).
+
+![Curva t1000](/Ra2575/rb_plot_t1000.png)
+
+Como el tiempo de simulación apenas coincide con el tiempo característico viscoso y difusivo, los resultados implican que el valor crítico $Ra_c$ tiende a ser mayor del esperado. Esto puede explicarse justamente por la falta de tiempo para la correcta manifestación de los procesos implicados
+
 ## Determinación del umbral de convección natural
 
 Para hallar el valor crítico de $Ra$, se realizó una serie de simulaciones para distintos valores del mismo y se procuró determinar la velocidad máxima en la dirección vertical para el último instante ($t=10000$) a modo de obtener una curva a la obtenida por [Wesfreid et al. [1978]](https://www.researchgate.net/profile/Jose-Wesfreid/publication/43326017_Critical_effects_in_Rayleigh-Benard_convection/links/00463518264c70c91a000000/Critical-effects-in-Rayleigh-Benard-convection.pdf).
