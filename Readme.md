@@ -35,6 +35,7 @@ Si bien, explícitamente no hay condiciones de simetría, [los resultados de las
 
 ## Parámetros numéricos
 
+Las simulaciones se efectuaron por medio del software [OpenFOAM (version 8)](https://www.openfoam.com/) y la visualización se llevó a cabo en [Paraview (5.6.2)](https://www.paraview.org/). Ambos se pueden obtener desde los sitios oficiales o a través de [blueCFD](https://bluecfd.github.io/Core/Downloads/).  
 El solver empleado es `buoyantPimpleFoam` y es el más recomendado para simulaciones en régimen transitorio en casos de transferencia de calor por permitir considerar la aproximación de Boussinesq y simplificar, de esta manera, el término de las fuerzas volumétricas (flotación) en la ecuación de conservación de la cantidad de movimiento.
 
 Como el regimen es claramente laminar, el modelo de turbulencia no merece consideración. No obstante, en el código se adopta el modelo *k-epsilon* del tipo RAS.
@@ -108,4 +109,15 @@ Las siguientes simulaciones corresponden a valores de $Ra=1960$, intervalos de t
 
 ### Vorticidad
 [![VideoOmega](/B1900t10000/Ra1960t10000_omega_preview.png)](https://drive.google.com/file/d/1xLCPACeWyeALOYaZgiZjuH0hiTd936Wh/view?usp=sharing)
+
+## Bibliografía
+
+Wesfreid, J., Pomeau, Y., Dubois, M., Normand, C., & Bergé, P. (1978). Critical effects in Rayleigh-Bénard convection. Journal de Physique, 39(7), 725-731.
+
+Bergé, P. (1975). Rayleigh-Benard instability: experimental findings obtained by light scattering and other optical methods. Fluctuations, Instabilities, and Phase Transitions, 323-352.
+
+Greenshields, C. y Weller, H. (2022). Notes on Computational Fluid Dynamics: General Principles. Reading, UK: CFD Direct Ltd
+
+D'Adamo, J. (2022). Transferencia de Calor y Masa. Universidad de Buenos Aires.
+
 
