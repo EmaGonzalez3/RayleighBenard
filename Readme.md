@@ -17,7 +17,7 @@ Si bien un mallado más fino permite tener simulaciones más precisas, también 
 - Una malla media de 1800 celdas (90x20x1)
 - Una malla fina de 4500 celdas (90x50x1)
 
-Al [comparar](/analisis_mallado.ipynb "Cuaderno de cálculo de análisis del tamaño de malla") las [velocidades máximas obtenidas](/tabla_malla.csv) luego de simular el mismo intervalo ($t = 10000 \\, s$) para distintos valores del número de Rayleigh se observa lo siguiente:
+Al [comparar](/analisis_mallado.ipynb "Cuaderno de cálculo de análisis del tamaño de malla") las [velocidades máximas obtenidas](/tabla_malla.csv "Tabla con velocidades para distintos tamaños de malla") luego de simular el mismo intervalo ($t = 10000 \\, s$) para distintos valores del número de Rayleigh se observa lo siguiente:
 
 ![Comparación tamaños de malla](/mallado_plot.png)
 
