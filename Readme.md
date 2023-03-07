@@ -9,6 +9,22 @@ La malla se generó con la utilidad `blockMesh`. La siguiente figura muestra la 
 
 ![Detalle de la malla](/B1900t10000/Detalle_mallado.png)
 
+### Influencia del tamaño de malla
+
+Si bien un mallado más fino permite tener simulaciones más precisas, también aumenta el costo computacional y, por ende, el tiempo requerido para efectuar los cálculos así como el tamaño de los archivos. A modo de optimizar la malla, se hicieron 3 pruebas con distintos tamaños:
+
+- Una malla gruesa de 900 celdas (90x10x1)
+- Una malla media de 1800 celdas (90x20x1)
+- Una malla fina de 4500 celdas (90x50x1)
+
+Al comparar las [velocidades máximas obtenidas](/tabla_malla.csv) luego de simular el mismo intervalo ($t = 10000 \\, s$) para distintos valores del número de Rayleigh se observa lo siguiente:
+
+[![Comparación tamaños de malla](/mallado_plot.png)](/analisis_mallado.ipynb)
+
+Para valores menores del parámetro adimensional en cuestión, la malla media proporciona resultados muy cercanos a los de la más fina mientras que la gruesa no es tan precisa. A medida que el $Ra$ aumenta la malla media comienza a diferir en mayor medida de la fina para, cerca de $Ra = 1900$ comportarse de forma muy similar a la gruesa. No obstante, debido a que el tiempo de simulación de la malla media es apenas el doble que el de la gruesa y aproximadamente 5 veces menor que el de la fina, resulta conveniente adoptarla para las simulaciones a efectuar. De esta manera, se concluye que la malla de 1800 celdas es la opción óptima.
+
+### Condiciones de borde
+
 Tanto las paredes superior e inferior como izquierda y derecha del recinto se consideran sólidos (`wall`) mientras que a las caras frontal y posterior se les atribuye la condición `empty` que denota la irrelevancia de la dirección en la solución numérica.
 
 La temperatura en la pared inferior es $T_H=300\\,K$ y la de la pared superior $T_C=301\\,K$, ambas son uniformes y permanecen constantes. Para las paredes laterales se fija una condición de gradiente nulo (`zeroGradient`).  
