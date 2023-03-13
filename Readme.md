@@ -104,9 +104,9 @@ Se [ajustan](/rayleigh_benard4.ipynb) los puntos obtenidos de acuerdo a la ley p
 
 Se aprecia sin relleno el punto correspondiente al valor crítico, que corresponde a $Ra_c=1646.
 
-Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico corresponde a $Ra_c=1708$ lo que implica un error relativo de un $2,23 \\, \\%$ para el resultado obtenido en la simulación numérica y permite concluir que la misma valida satisfactoriamente la evidencia experimental.
+Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico corresponde a $Ra_c=1708$ lo que implica un error relativo de un $3,64 \\, \\%$ para el resultado obtenido en la simulación numérica y permite concluir que la misma valida satisfactoriamente la evidencia experimental.
 
-Cabe aclarar que se consideraron para el ajuste los puntos correspondientes a los valores entre $Ra = 1662$ y $Ra = 1750$ de la [tabla de resultados](#anexo-i-tabla-de-resultados), esto se debe a que la validez del ajuste tiene un rango limitado alrededor del umbral de convección natural.
+Cabe aclarar que se consideraron para el ajuste los puntos correspondientes a los valores entre $Ra = 1646$ y $Ra = 1750$ de la [tabla de resultados](#anexo-i-tabla-de-resultados), esto se debe a que la validez del ajuste tiene un rango limitado alrededor del umbral de convección natural.
 
 Sobre lo expresado en los [comentarios](#influencia-del-tamaño-de-malla) acerca de la influencia del tamaño de malla, se ve que el valor crítico efectivamente tiene un error en defecto. Si bien escapa al análisis pertinente, sería coherente suponer que al trabajar con mallas más finas el resultado se acerque más al valor experimental.
 
