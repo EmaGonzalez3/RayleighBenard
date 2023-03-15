@@ -102,7 +102,7 @@ Se [ajustan](/rayleigh_benard4.ipynb) los puntos obtenidos de acuerdo a la ley p
 
 ![Ajustes_rb](/rb_plot3.png)
 
-Se aprecia sin relleno el punto correspondiente al valor crítico, que corresponde a $Ra_c=1646.
+Se aprecia sin relleno el punto correspondiente al valor crítico, que corresponde a $Ra_c=1646$.
 
 Estudios experimentales (Jeffreys, H. [1928]) demostraron que el valor crítico corresponde a $Ra_c=1708$ lo que implica un error relativo de un $3,64 \\, \\%$ para el resultado obtenido en la simulación numérica y permite concluir que la misma valida satisfactoriamente la evidencia experimental.
 
